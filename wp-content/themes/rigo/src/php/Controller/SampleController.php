@@ -15,6 +15,11 @@ class SampleController{
         $query = Course::all([ 'status' => 'draft' ]);
         return $query->posts;
     }
+
+    public function getDraftCampuses(){
+        $query = Campus::all([ 'status' => 'draft' ]);
+        return $query->posts;
+    }
     
 }
 ?>
